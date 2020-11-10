@@ -38,7 +38,7 @@ function preload(){
  Background1 = loadImage("assets/img/bg2.png");
 Cloud = loadImage("https://image.ibb.co/iT0jQA/8i6o-A9x5-T.png");
 rock = loadImage("assets/img/penguin.png");
-coin = loadImage("https://image.ibb.co/jRAp0y/coin.png") ;
+coin = loadImage("assets/img/coin.png") ;
 Enemies[0] = loadImage("assets/img/fire.png");
  Background2 = loadImage("https://preview.ibb.co/gtT1sq/midnight-volcano-brad-simpson.jpg" );
 }
@@ -59,12 +59,14 @@ button.hide();
 for(var i =0;i<3;i++){
     life.push(new helath(i*20));
 }
-var a = confirm(`1.Click "Ok" to play in Light mode\n2.click "Cancel" to play in dark mode `);
+var a = alert(`Welcome to ATLA Game\nclick "OK" to play\nEnjoy ;) `);
+// var a = confirm(`1.Click "Ok" to play in Light mode\n2.click "Cancel" to play in dark mode `);
 if(a==true){
     theme.img = Background1;
     }
     else{
-      theme.img = Background2;
+      theme.img = Background1;
+    //   theme.img = Background2;
     }
 
 }
